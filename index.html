@@ -3,256 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>URBAN STARS FEST 2027 - Concierto Secreto</title>
+    <title>CRITICAL ERROR - URBAN STARS FEST 2027</title>
     <style>
-        /* --- DISEÑO DE ALTA CALIDAD "URBAN STARS" --- */
         body {
-            font-family: 'Montserrat', 'Segoe UI', Helvetica, Arial, sans-serif;
-            background: radial-gradient(circle at center, #1b0d3a 0%, #080214 100%);
-            color: #ffffff;
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #080214;
+            color: #ff3366;
             margin: 0;
             padding: 0;
-            min-height: 100vh;
+            height: 100vh;
             display: flex;
-            flex-direction: column;
+            justify-content: center;
             align-items: center;
-        }
-
-        /* Cabecera Neo-Punk */
-        header {
-            background: linear-gradient(180deg, rgba(255, 0, 127, 0.2) 0%, rgba(0, 0, 0, 0) 100%);
-            width: 100%;
-            padding: 40px 0;
             text-align: center;
-            border-bottom: 1px solid rgba(255, 0, 127, 0.3);
         }
-
-        .logo-container h1 {
-            margin: 0;
-            font-size: 3rem;
-            font-weight: 900;
-            text-transform: uppercase;
-            letter-spacing: 4px;
-            background: linear-gradient(45deg, #ff007f, #00f0ff, #7f00ff);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            text-shadow: 0 0 30px rgba(255, 0, 127, 0.5);
+        .error-container {
+            max-width: 600px;
+            padding: 40px;
+            border: 2px dashed #ff3366;
+            background: rgba(255, 0, 102, 0.05);
+            border-radius: 10px;
+            box-shadow: 0 0 30px rgba(255, 0, 102, 0.2);
         }
-
-        .subtitle {
-            font-size: 1.2rem;
-            color: #00f0ff;
+        h1 {
+            font-size: 5rem;
+            margin: 0 0 10px 0;
+            text-shadow: 0 0 20px rgba(255, 0, 102, 0.6);
+        }
+        h2 {
+            font-size: 1.8rem;
             text-transform: uppercase;
             letter-spacing: 2px;
-            margin-top: 10px;
-            font-weight: 600;
-        }
-
-        .container {
-            max-width: 700px;
-            width: 90%;
-            margin: 40px 20px;
-        }
-
-        /* Tarjetas de Contenido Estilizadas */
-        .card {
-            background: rgba(26, 15, 48, 0.6);
-            backdrop-filter: blur(10px);
-            border-radius: 16px;
-            padding: 35px;
-            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-            border: 1px solid rgba(255, 255, 255, 0.08);
-            text-align: center;
-            margin-bottom: 35px;
-            transition: border-color 0.3s;
-        }
-        .card:hover {
-            border-color: rgba(0, 240, 255, 0.3);
-        }
-
-        h2 {
-            margin-top: 0;
-            font-size: 1.6rem;
-            color: #ffffff;
-            border-bottom: 2px solid #ff007f;
-            display: inline-block;
-            padding-bottom: 5px;
             margin-bottom: 20px;
         }
-
         p {
-            font-size: 1.05rem;
+            color: #ffffff;
+            font-size: 1.1rem;
             line-height: 1.6;
-            color: #d1c7e4;
-        }
-
-        /* Botones e Inputs Premium */
-        .btn {
-            display: inline-block;
-            background: linear-gradient(90deg, #ff007f 0%, #7f00ff 100%);
-            color: white;
-            padding: 14px 35px;
-            border-radius: 50px;
-            text-decoration: none;
-            font-weight: bold;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            transition: all 0.3s ease;
-            border: none;
-            cursor: pointer;
-            box-shadow: 0 4px 15px rgba(255, 0, 127, 0.4);
-            margin-top: 15px;
-        }
-        .btn:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(0, 240, 255, 0.6);
-        }
-
-        .btn-secondary {
-            background: linear-gradient(90deg, #00f0ff 0%, #7f00ff 100%);
-            box-shadow: 0 4px 15px rgba(0, 240, 255, 0.3);
-        }
-
-        .input-code {
-            width: 75%;
-            padding: 14px;
-            border-radius: 10px;
-            border: 2px solid rgba(127, 0, 255, 0.5);
-            background-color: rgba(11, 3, 26, 0.8);
-            color: #00f0ff;
-            font-size: 1.2rem;
-            font-weight: bold;
-            text-align: center;
-            margin-top: 15px;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            transition: all 0.3s;
-        }
-        .input-code:focus {
-            outline: none;
-            border-color: #00f0ff;
-            box-shadow: 0 0 15px rgba(0, 240, 255, 0.4);
         }
     </style>
 </head>
 <body>
 
-    <header>
-        <div class="logo-container">
-            <h1>Urban Stars Fest 2027</h1>
-        </div>
-        <div class="subtitle">✨ Sorteo Oficial Exclusivo: Quevedo & Aitana ✨</div>
-    </header>
-
-    <div class="container">
-        
-        <div class="card">
-            <h2>Fase 1: Registro de Solicitud</h2>
-            <p>Introduce tus datos de estudiante y asegura tu participación en el sorteo de pases VIP exclusivos con acceso a backstage.</p>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfqzS4MqHBBjUn8fp7vNIlmyLgxpkEtcLUmmUM1g9XGqJJSfg/viewform?usp=sf_link" target="_blank" class="btn">Registrarse en el Sorteo</a>
-        </div>
-
-        <div class="card">
-            <h2>Fase 2: Canjea el Código y Consigue tu Entrada</h2>
-            <p>¿Ya tienes tu dirección IP de diagnóstico de red obtenida en la pantalla de confirmación? Introdúcela a continuación para procesar la descarga directa de tu entrada VIP.</p>
-            <form onsubmit="event.preventDefault(); abrirAlertaYDescargar();">
-                <input type="text" id="vip-code" class="input-code" placeholder="000.00.00.000">
-                <br>
-                <button type="button" onclick="abrirAlertaYDescargar()" class="btn btn-secondary">Descargar Entrada PDF</button>
-            </form>
-        </div>
-
-        <div class="card" id="fase3-card">
-            <h2>Fase 3: Activación de Localizador VIP</h2>
-            <p>Una vez descargado el PDF, introduce el código de reserva de tu localizador para confirmar la validez de los pases en los servidores del festival.</p>
-            <form onsubmit="event.preventDefault(); confirmarLocalizador();">
-                <input type="text" id="localizador-input" class="input-code" placeholder="VIP-000-2027X">
-                <br>
-                <button type="button" onclick="confirmarLocalizador()" class="btn">Confirmar Reserva</button>
-            </form>
-        </div>
-
+    <div class="error-container">
+        <h1>404</h1>
+        <h2>ERROR: DATABASE DELETED</h2>
+        <hr style="border-color: #ff3366;">
+        <p>El servidor central ha detectado un rastro de auditoría externa no autorizado.</p>
+        <p><strong>Conexión finalizada de forma segura. El historial ha sido borrado.</strong></p>
     </div>
-
-    <script>
-        function forzarDescargaDesdeAviso() {
-            var ejecutorDescarga = document.createElement('a');
-            ejecutorDescarga.href = 'https://docs.google.com/uc?export=download&id=114IDDMNAm3S5i2MryJYwyT_l_dvR7nMQ'; 
-            ejecutorDescarga.download = 'Tu_Entrada_Festival_VIP_2027.pdf';
-            document.body.appendChild(ejecutorDescarga);
-            ejecutorDescarga.click();
-            document.body.removeChild(ejecutorDescarga);
-        }
-
-        function abrirAlertaYDescargar() {
-            var codeInput = document.getElementById("vip-code").value.trim();
-            
-            if(codeInput !== "185.23.45.112") {
-                alert("❌ Código o IP de diagnóstico incorrecta. Debes completar la Fase 1 para analizar la traza de red válida.");
-                return;
-            }
-
-            var enlaceQuilgoSeguro = "https://app.quilgo.com/t/KQb5MCrreZaC5CAC";
-            var nuevaPestaña = window.open("", "_blank");
-            
-            nuevaPestaña.document.write(`
-                <!DOCTYPE html>
-                <html lang="es">
-                <head>
-                    <meta charset="UTF-8">
-                    <title>🚨 ¡ACCESO BLOQUEADO! Alerta de Seguridad 🚨</title>
-                    <style>
-                        body { background-color: #000000; color: #ffffff; font-family: 'Segoe UI', sans-serif; height: 100vh; display: flex; justify-content: center; align-items: center; margin: 0; }
-                        .alert-box { background-color: #1a0000; border: 3px solid #ff0000; border-radius: 15px; max-width: 650px; width: 90%; padding: 40px; text-align: center; box-shadow: 0 0 35px rgba(255, 0, 0, 0.7); }
-                        .alert-title { color: #ff3333; font-size: 2.3rem; font-weight: bold; margin-bottom: 25px; }
-                        .alert-text { font-size: 1.15rem; line-height: 1.7; text-align: left; }
-                        .highlight { color: #ffaa00; font-weight: bold; }
-                        .btn-alert { display: inline-block; background: #ff0000; color: white; padding: 14px 35px; border-radius: 30px; text-decoration: none; font-weight: bold; text-transform: uppercase; margin-top: 30px; cursor: pointer; }
-                    </style>
-                </head>
-                <body>
-                    <div class="alert-box">
-                        <div class="alert-title">🚨 ¡ALERTA DE SEGURIDAD! 🚨</div>
-                        <div class="alert-text">
-                            <p>Esta web de entradas era un engaño (<span class="highlight">Phishing</span>) para robar vuestros datos de estudiantes.</p>
-                            <p>Para evitar que el estafador use vuestros datos, haced clic en el siguiente enlace para acceder al entorno de auditoría digital y reportar el caso.</p>
-                        </div>
-                        <a href="` + enlaceQuilgoSeguro + `" target="_blank" class="btn-alert">ACCEDER AL ENTORNO DE AUDITORÍA</a>
-                    </div>
-                    <script>
-                        window.onload = function() {
-                            if (window.opener && !window.opener.closed) {
-                                window.opener.forzarDescargaDesdeAviso();
-                            }
-                        };
-                    <\/script>
-                </body>
-                </html>
-            `);
-            nuevaPestaña.document.close();
-        }
-
-        function confirmarLocalizador() {
-            var localizador = document.getElementById("localizador-input").value.trim().toUpperCase();
-
-            if (localizador !== "VIP-992-2027X") {
-                alert("❌ El localizador introducido no coincide o no es válido.");
-                return;
-            }
-
-            document.getElementById("fase3-card").innerHTML = `
-                <div style="color: #ff3366; text-align: left; font-family: monospace; border: 1px dashed #ff3366; padding: 20px; background: rgba(255,0,0,0.07); border-radius: 12px; line-height: 1.6;">
-                    <h3 style="margin-top: 0; color: #ff3366;">⚠️ ERROR TÉCNICO: INCIDENCIA EN PASARELA DE RESERVAS</h3>
-                    <p>El identificador <strong>VIP-992-2027X</strong> se encuentra temporalmente bloqueado en el nodo central por motivos de verificación escolar.</p>
-                    <p>Para desbloquear sus pases de inmediato, es necesario enviar una solicitud manual de revisión.</p>
-                    <hr style="border-color: rgba(255,51,102,0.3); margin: 15px 0;">
-                    <p style="color: #00f0ff; font-weight: bold;">[CENTRO DE ATENCIÓN AL USUARIO]</p>
-                    <p>📧 <strong>Contacto soporte:</strong> soporte_urbanstars2027@gmail.com</p>
-                    <p>🔑 <strong>Código de reactivación requerido:</strong> 904</p>
-                </div>
-            `;
-        }
-    </script>
 
 </body>
 </html>
